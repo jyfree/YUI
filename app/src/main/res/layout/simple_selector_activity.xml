@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_Shadow"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Shadow" />
+
+
+    <TextView
+        android:id="@+id/tv_BgColor"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="BgColor" />
+
+    <TextView
+        android:id="@+id/tv_TextColor"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TextColor" />
+
+    <ImageView
+        android:id="@+id/iv_BgDrawable"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_CDrawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="CompoundDrawable" />
+
+    <com.jy.yui.widget.imageview.TouchImageView
+        android:id="@+id/iv_touch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_up"
+        app:tiv_selected_mask_color="#30000000" />
+
+    <com.jy.yui.widget.textview.ShapeTextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:stv_backgroundColor="@color/colorAccent"
+        app:stv_cornerRadius="10dp"
+        app:stv_strokeColor="@color/colorPrimary"
+        app:stv_strokeWidth="2dp" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TouchImageView">
+        <!--选中时，覆盖在图片上的图层颜色，默认：Color.TRANSPARENT-->
+        <attr name="tiv_selected_mask_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ShapeTextView">
+        <!-- 圆角矩形背景色 -->
+        <attr name="stv_backgroundColor" format="color" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="stv_cornerRadius" format="dimension" />
+        <!-- 圆角边框大小,单位dp-->
+        <attr name="stv_strokeWidth" format="dimension" />
+        <!-- 圆角边框颜色-->
+        <attr name="stv_strokeColor" format="color" />
+        <!-- 圆角弧度是高度一半-->
+        <attr name="stv_isRadiusHalfHeight" format="boolean" />
+        <!-- 圆角矩形宽高相等,取较宽高中大值-->
+        <attr name="stv_isWidthHeightEqual" format="boolean" />
+    </declare-styleable>
+</resources>
