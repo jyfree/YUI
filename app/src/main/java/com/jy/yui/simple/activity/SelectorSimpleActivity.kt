@@ -36,7 +36,7 @@ class SelectorSimpleActivity : AppCompatActivity() {
     private fun initUI(savedInstanceState: Bundle?) {
         tv_Shadow.setShadow(
             R.color.colorAccent,
-            R.color.back
+            R.color.colorPrimary
         )
         tv_BgColor.setBgColor(
             R.color.colorAccent,
