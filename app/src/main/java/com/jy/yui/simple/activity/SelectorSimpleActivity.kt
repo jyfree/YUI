@@ -30,6 +30,7 @@ class SelectorSimpleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_selector)
         initUI(savedInstanceState)
+
     }
 
 
