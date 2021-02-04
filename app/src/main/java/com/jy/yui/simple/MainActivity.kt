@@ -2,7 +2,9 @@ package com.jy.yui.simple
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.jy.yui.simple.selector.SelectorSimpleActivity
+import com.jy.yui.simple.activity.SelectorSimpleActivity
+import com.jy.yui.simple.activity.ShapeTextViewSimpleActivity
+import com.jy.yui.simple.activity.TouchImageViewSimpleActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,5 +16,9 @@ class MainActivity : AppCompatActivity() {
         btnSelectorSimple.setOnClickListener {
             SelectorSimpleActivity.startAct(this)
         }
+        btnShapeTVSimple.setOnClickListener {
+            ShapeTextViewSimpleActivity.startAct(this)
+        }
+        btnTouchIVSimple.setOnClickListener { TouchImageViewSimpleActivity.startAct(this) }
     }
 }

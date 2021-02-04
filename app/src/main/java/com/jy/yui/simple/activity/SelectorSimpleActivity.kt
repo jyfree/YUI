@@ -1,13 +1,13 @@
-package com.jy.yui.simple.selector
+package com.jy.yui.simple.activity
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.jy.yui.selector.selector.CompoundDrawableSelector
 import com.jy.yui.simple.R
-import kotlinx.android.synthetic.main.simple_selector_activity.*
+import com.jy.yui.simple.utils.*
+import kotlinx.android.synthetic.main.activity_selector.*
 
 
 /**
@@ -28,7 +28,7 @@ class SelectorSimpleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.simple_selector_activity)
+        setContentView(R.layout.activity_selector)
         initUI(savedInstanceState)
     }
 
@@ -55,8 +55,5 @@ class SelectorSimpleActivity : AppCompatActivity() {
             R.drawable.icon_down,
             CompoundDrawableSelector.TOP
         )
-        iv_touch.setOnClickListener {
-            Log.d("YLog", "点我了")
-        }
     }
 }

@@ -2,11 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jy.yui.simple">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -18,7 +21,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".selector.SelectorSimpleActivity" />
+        <activity android:name=".activity.SelectorSimpleActivity" />
+        <activity android:name=".activity.ShapeTextViewSimpleActivity" />
+        <activity android:name=".activity.TouchImageViewSimpleActivity" />
 
     </application>
 

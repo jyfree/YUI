@@ -2,6 +2,8 @@ package com.jy.yui
 
 import android.app.Application
 import android.content.Context
+import com.jy.yui.strategy.IImageLoadStrategy
+import com.jy.yui.strategy.ImageLoader
 
 object YUI {
     private var sContext: Application? = null
@@ -9,8 +11,9 @@ object YUI {
      * 必须在全局Application先调用，获取context上下文
      * @param app Application
      */
-    fun init(app: Application) {
+    fun init(app: Application, strategy: IImageLoadStrategy) {
         sContext = app
+        ImageLoader.get().init(strategy)
     }
 
     /**

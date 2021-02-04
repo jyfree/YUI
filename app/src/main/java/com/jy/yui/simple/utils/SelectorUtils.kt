@@ -1,4 +1,4 @@
-package com.jy.yui.simple.selector
+package com.jy.yui.simple.utils
 
 import android.view.View
 import android.widget.TextView
