@@ -15,7 +15,7 @@ import com.jy.yui.YUIHelper.dip2px
  * @date: 2021/2/3 17:15
  * @author: jy
  */
-class ShapeTextView @JvmOverloads constructor(
+open class ShapeTextView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
