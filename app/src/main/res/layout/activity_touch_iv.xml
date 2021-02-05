@@ -27,11 +27,12 @@
         android:layout_height="100dp"
         android:layout_marginBottom="10dp" />
 
-    <ImageView
+    <com.jy.yui.widget.imageview.TouchImageView
         android:id="@+id/iv_3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        app:tiv_selected_mask_color="#30ff0000" />
 
     <ImageView
         android:id="@+id/iv_4"
