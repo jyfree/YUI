@@ -1,5 +1,7 @@
 package com.jy.yui.simple
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +11,14 @@ import com.jy.yui.simple.activity.ShapeTextViewSimpleActivity
 import com.jy.yui.simple.activity.TouchImageViewSimpleActivity
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        fun startAct(context: Context) {
+            val intent = Intent()
+            intent.setClass(context, MainActivity::class.java)
+            context.startActivity(intent)
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

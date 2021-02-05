@@ -41,4 +41,13 @@ public class DemoDataProvider {
         return list;
     }
 
+    public static List<Object> getUserGuides() {
+        List<Object> list = new ArrayList<>();
+        list.add(R.drawable.guide_img_1);
+        list.add(R.drawable.guide_img_2);
+        list.add(R.drawable.guide_img_3);
+        list.add(R.drawable.guide_img_4);
+        return list;
+    }
+
 }
