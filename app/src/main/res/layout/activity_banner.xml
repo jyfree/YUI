@@ -70,6 +70,119 @@
                 app:bb_scale="0.5625"
                 app:bb_textColor="#ffffff"
                 app:bb_textSize="13.5sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="索引点使用资源图片"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+
+            <com.jy.yui.widget.banner.SimpleImageBanner
+                android:id="@+id/ib_res"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:bb_indicatorGap="7dp"
+                app:bb_indicatorHeight="7dp"
+                app:bb_indicatorSelectRes="@drawable/ic_banner_dot_select"
+                app:bb_indicatorStyle="DRAWABLE_RESOURCE"
+                app:bb_indicatorUnSelectRes="@drawable/ic_banner_dot_unselect"
+                app:bb_indicatorWidth="7dp"
+                app:bb_scale="0.5625" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="矩形索引点"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+
+            <com.jy.yui.widget.banner.SimpleImageBanner
+                android:id="@+id/ib_rectangle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:bb_delay="7"
+                app:bb_indicatorCornerRadius="0dp"
+                app:bb_period="7"
+                app:bb_scale="0.5625" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="扁长条索引点"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+
+            <com.jy.yui.widget.banner.SimpleImageBanner
+                android:id="@+id/ib_corner_rectangle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:bb_indicatorCornerRadius="2dp"
+                app:bb_indicatorHeight="4dp"
+                app:bb_indicatorWidth="10dp"
+                app:bb_scale="0.5625" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="索引在右文字在左"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+
+            <com.jy.yui.widget.banner.SimpleImageBanner
+                android:id="@+id/ib_indicator_right_with_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:bb_barColor="#88000000"
+                app:bb_delay="3"
+                app:bb_indicatorCornerRadius="2dp"
+                app:bb_indicatorGravity="RIGHT"
+                app:bb_indicatorHeight="4dp"
+                app:bb_indicatorWidth="10dp"
+                app:bb_period="5"
+                app:bb_scale="0.5625" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="索引在左文字在右"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+
+            <com.jy.yui.widget.banner.SimpleImageBanner
+                android:id="@+id/ib_indicator_left_with_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:bb_barColor="#88000000"
+                app:bb_delay="3"
+                app:bb_indicatorGravity="LEFT"
+                app:bb_period="5"
+                app:bb_scale="0.5625" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="简单的文字轮播"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+
+            <com.jy.yui.widget.banner.SimpleTextBanner
+                android:id="@+id/tb_test"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                app:bb_isIndicatorShow="false" />
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
