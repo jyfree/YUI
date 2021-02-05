@@ -14,10 +14,9 @@ import kotlinx.android.synthetic.main.activity_touch_iv.*
 
 
 /**
-
- * @Author Administrator
- * @Date 2019/10/21-13:50
- * @TODO TouchImageView示例
+ * @description TouchImageView示例
+ * @date: 2021/2/5 14:44
+ * @author: jy
  */
 class TouchImageViewSimpleActivity : AppCompatActivity() {
 

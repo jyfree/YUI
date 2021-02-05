@@ -16,6 +16,10 @@ object YUIHelper {
 
     fun dip2px(dipValue: Float): Int = dp2px(YUI.getContext(), dipValue)
 
+    fun sp2px(sp: Float): Float {
+        val scale: Float = YUI.getContext().resources.displayMetrics.scaledDensity
+        return sp * scale
+    }
 
     private fun dp2px(context: Context?, dipValue: Float): Int {
         if (context != null) {

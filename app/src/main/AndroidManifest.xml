@@ -24,6 +24,7 @@
         <activity android:name=".activity.SelectorSimpleActivity" />
         <activity android:name=".activity.ShapeTextViewSimpleActivity" />
         <activity android:name=".activity.TouchImageViewSimpleActivity" />
+        <activity android:name=".activity.BannerSimpleActivity" />
 
     </application>
 

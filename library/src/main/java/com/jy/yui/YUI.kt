@@ -4,6 +4,7 @@ import android.app.Application
 import android.content.Context
 import com.jy.yui.strategy.IImageLoadStrategy
 import com.jy.yui.strategy.ImageLoader
+import com.jy.yui.utils.YUILogUtils
 
 object YUI {
     private var sContext: Application? = null
@@ -11,9 +12,10 @@ object YUI {
      * 必须在全局Application先调用，获取context上下文
      * @param app Application
      */
-    fun init(app: Application, strategy: IImageLoadStrategy) {
+    fun init(app: Application, strategy: IImageLoadStrategy, showLog: Boolean = false) {
         sContext = app
         ImageLoader.get().init(strategy)
+        YUILogUtils.SHOW_LOG = showLog
     }
 
     /**

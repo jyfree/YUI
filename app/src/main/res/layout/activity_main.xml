@@ -8,6 +8,7 @@
         android:id="@+id/btnSelectorSimple"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="btnClick"
         android:text="Selector示例"
         android:textAllCaps="false" />
 
@@ -15,6 +16,7 @@
         android:id="@+id/btnShapeTVSimple"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="btnClick"
         android:text="ShapeTV示例"
         android:textAllCaps="false" />
 
@@ -22,6 +24,16 @@
         android:id="@+id/btnTouchIVSimple"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="btnClick"
         android:text="TouchIV示例"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnBannerSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnClick"
+        android:text="Banner示例"
+        android:textAllCaps="false" />
+
 </LinearLayout>

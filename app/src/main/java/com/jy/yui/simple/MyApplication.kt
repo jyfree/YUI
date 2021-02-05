@@ -8,6 +8,6 @@ class MyApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        YUI.init(this, GlideImageLoadStrategy())
+        YUI.init(this, GlideImageLoadStrategy(),true)
     }
 }

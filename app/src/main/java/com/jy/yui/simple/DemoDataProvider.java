@@ -1,5 +1,10 @@
 package com.jy.yui.simple;
 
+import com.jy.yui.widget.banner.BannerItem;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @description 演示数据
  * @date: 2021/2/4 17:05
@@ -22,5 +27,18 @@ public class DemoDataProvider {
             "http://photocdn.sohu.com/tvmobilemvms/20150902/144115156939164801.jpg",//综艺饭:胖轩偷看夏天洗澡掀波澜
             "http://photocdn.sohu.com/tvmobilemvms/20150907/144159406950245847.jpg",//碟中谍4:阿汤哥高塔命悬一线,超越不可能
     };
+
+    public static List<BannerItem> getBannerList() {
+        ArrayList<BannerItem> list = new ArrayList<>();
+        for (int i = 0; i < urls.length; i++) {
+            BannerItem item = new BannerItem();
+            item.imgUrl = urls[i];
+            item.title = titles[i];
+
+            list.add(item);
+        }
+
+        return list;
+    }
 
 }

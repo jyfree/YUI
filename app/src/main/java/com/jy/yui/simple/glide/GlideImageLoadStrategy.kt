@@ -8,6 +8,11 @@ import com.bumptech.glide.request.RequestOptions
 import com.jy.yui.strategy.AlignEnum
 import com.jy.yui.strategy.IImageLoadStrategy
 
+/**
+ * @description glide加载图片策略
+ * @date: 2021/2/5 14:45
+ * @author: jy
+ */
 class GlideImageLoadStrategy : IImageLoadStrategy {
     override fun loadImage(
         imageView: ImageView,

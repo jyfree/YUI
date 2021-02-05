@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingStart="25dp"
+                android:paddingLeft="25dp"
+                android:text="图片轮播简单使用"
+                android:textColor="#383838"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+            <com.jy.yui.widget.banner.SimpleImageBanner
+                android:id="@+id/simple_usage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:bb_scale="0.5625" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="图片轮播复杂使用"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+
+            <com.jy.yui.widget.banner.SimpleImageBanner
+                android:id="@+id/most_complex_usage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:bb_scale="0.5625"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
