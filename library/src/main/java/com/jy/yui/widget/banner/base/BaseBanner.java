@@ -41,6 +41,7 @@ import java.util.List;
  */
 public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends RelativeLayout {
 
+    private static final int GRAVITY_LEFT = 0, GRAVITY_CENTER = 1, GRAVITY_RIGHT = 2;
     /**
      * ViewPager
      */
@@ -166,11 +167,11 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
 
         int barColor = ta.getColor(R.styleable.BaseBanner_bb_barColor, Color.TRANSPARENT);
         mIsBarShowWhenLast = ta.getBoolean(R.styleable.BaseBanner_bb_isBarShowWhenLast, true);
-        int indicatorGravity = ta.getInt(R.styleable.BaseBanner_bb_indicatorGravity, Gravity.CENTER);
+        int indicatorGravity = ta.getInt(R.styleable.BaseBanner_bb_indicatorGravity, GRAVITY_CENTER);
         float barPaddingLeft = ta.getDimension(R.styleable.BaseBanner_bb_barPaddingLeft, YUIHelper.INSTANCE.dip2px(10));
-        float barPaddingTop = ta.getDimension(R.styleable.BaseBanner_bb_barPaddingTop, YUIHelper.INSTANCE.dip2px(indicatorGravity == Gravity.CENTER ? 6 : 2));
+        float barPaddingTop = ta.getDimension(R.styleable.BaseBanner_bb_barPaddingTop, YUIHelper.INSTANCE.dip2px(indicatorGravity == GRAVITY_CENTER ? 6 : 2));
         float barPaddingRight = ta.getDimension(R.styleable.BaseBanner_bb_barPaddingRight, YUIHelper.INSTANCE.dip2px(10));
-        float barPaddingBottom = ta.getDimension(R.styleable.BaseBanner_bb_barPaddingBottom, YUIHelper.INSTANCE.dip2px(indicatorGravity == Gravity.CENTER ? 6 : 2));
+        float barPaddingBottom = ta.getDimension(R.styleable.BaseBanner_bb_barPaddingBottom, YUIHelper.INSTANCE.dip2px(indicatorGravity == GRAVITY_CENTER ? 6 : 2));
         int textColor = ta.getColor(R.styleable.BaseBanner_bb_textColor, Color.parseColor("#ffffff"));
         float textSize = ta.getDimension(R.styleable.BaseBanner_bb_textSize, YUIHelper.INSTANCE.sp2px(12.5f));
         boolean isTitleShow = ta.getBoolean(R.styleable.BaseBanner_bb_isTitleShow, true);
@@ -240,11 +241,11 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
         mTvTitle.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize);
         mTvTitle.setVisibility(isTitleShow ? VISIBLE : INVISIBLE);
 
-        if (indicatorGravity == Gravity.CENTER) {
+        if (indicatorGravity == GRAVITY_CENTER) {
             mLlBottomBar.setGravity(Gravity.CENTER);
             mLlBottomBar.addView(mLlIndicatorContainer);
         } else {
-            if (indicatorGravity == Gravity.END) {
+            if (indicatorGravity == GRAVITY_RIGHT) {
                 mLlBottomBar.setGravity(Gravity.CENTER_VERTICAL);
                 mLlBottomBar.addView(mTvTitle);
                 mLlBottomBar.addView(mLlIndicatorContainer);
@@ -252,7 +253,7 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
                 mTvTitle.setPadding(0, 0, YUIHelper.INSTANCE.dip2px(7), 0);
                 mTvTitle.setEllipsize(TextUtils.TruncateAt.END);
                 mTvTitle.setGravity(Gravity.START);
-            } else if (indicatorGravity == Gravity.START) {
+            } else if (indicatorGravity == GRAVITY_LEFT) {
                 mLlBottomBar.setGravity(Gravity.CENTER_VERTICAL);
                 mLlBottomBar.addView(mLlIndicatorContainer);
                 mLlBottomBar.addView(mTvTitle);

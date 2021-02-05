@@ -60,9 +60,9 @@
         <attr name="bb_isIndicatorShow" format="boolean" />
         <!-- 设置指示器位置.默认Gravity.CENTER时文字不显示-->
         <attr name="bb_indicatorGravity" format="enum">
-            <enum name="CENTER" value="17" />
-            <enum name="LEFT" value="3" />
-            <enum name="RIGHT" value="5" />
+            <enum name="LEFT" value="0" />
+            <enum name="CENTER" value="1" />
+            <enum name="RIGHT" value="2" />
         </attr>
     </declare-styleable>
 
