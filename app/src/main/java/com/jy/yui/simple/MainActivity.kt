@@ -5,10 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.jy.yui.simple.activity.BannerSimpleActivity
-import com.jy.yui.simple.activity.SelectorSimpleActivity
-import com.jy.yui.simple.activity.ShapeTextViewSimpleActivity
-import com.jy.yui.simple.activity.TouchImageViewSimpleActivity
+import com.jy.yui.simple.activity.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +28,7 @@ class MainActivity : AppCompatActivity() {
             R.id.btnShapeTVSimple -> ShapeTextViewSimpleActivity.startAct(this)
             R.id.btnTouchIVSimple -> TouchImageViewSimpleActivity.startAct(this)
             R.id.btnBannerSimple -> BannerSimpleActivity.startAct(this)
+            R.id.btnAlphaViewSimple -> AlphaViewSimpleActivity.startAct(this)
         }
     }
 }

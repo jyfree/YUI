@@ -36,4 +36,12 @@
         android:text="Banner示例"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btnAlphaViewSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnClick"
+        android:text="AlphaView示例"
+        android:textAllCaps="false" />
+
 </LinearLayout>
