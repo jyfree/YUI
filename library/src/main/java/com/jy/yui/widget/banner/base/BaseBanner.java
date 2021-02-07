@@ -125,6 +125,11 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
     public float imageGap;
 
     /**
+     * 图片圆角
+     */
+    public int imageCircleRadius;
+
+    /**
      * handler what
      */
     private int HANDLER_WHAT = 0x1;
@@ -180,6 +185,8 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
         float textSize = ta.getDimension(R.styleable.BaseBanner_bb_textSize, YUIHelper.INSTANCE.sp2px(12.5f));
         boolean isTitleShow = ta.getBoolean(R.styleable.BaseBanner_bb_isTitleShow, true);
         boolean isIndicatorShow = ta.getBoolean(R.styleable.BaseBanner_bb_isIndicatorShow, true);
+
+        imageCircleRadius = (int) ta.getDimension(R.styleable.BaseBanner_bb_imageCircleRadius, 0);
 
         float itemGap = ta.getDimension(R.styleable.BaseBanner_bb_itemGap, 0);
         imageGap = ta.getDimension(R.styleable.BaseBanner_bb_imageGap, 0);

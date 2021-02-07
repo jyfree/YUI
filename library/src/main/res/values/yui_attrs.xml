@@ -71,6 +71,9 @@
         <attr name="bb_imageGap" format="dimension" />
         <!-- 指示器边距-->
         <attr name="bb_barGap" format="dimension" />
+
+        <!-- 图片圆角 不能与bb_itemGap共用，否则圆角失效-->
+        <attr name="bb_imageCircleRadius" format="dimension" />
     </declare-styleable>
 
     <!-- BaseIndicatorBanner -->

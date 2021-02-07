@@ -8,7 +8,13 @@ import android.widget.ImageView
  * @author: jy
  */
 object ImageLoaderExt {
+
     fun loadImage(imageView: ImageView, path: Any?, placeholderRes: Int) {
         ImageLoader.get().loadImage(imageView, path, placeholderRes)
     }
+
+    fun loadImage(imageView: ImageView, path: Any?, placeholderRes: Int, circleRadius: Int) {
+        ImageLoader.get().loadImage(imageView, path, placeholderRes, circle = circleRadius)
+    }
+
 }
