@@ -119,6 +119,10 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
      */
     private float mContainerScale;
 
+    /**
+     * 图片边距 不能与itemGap共用
+     */
+    public float imageGap;
 
     /**
      * handler what
@@ -176,6 +180,15 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
         float textSize = ta.getDimension(R.styleable.BaseBanner_bb_textSize, YUIHelper.INSTANCE.sp2px(12.5f));
         boolean isTitleShow = ta.getBoolean(R.styleable.BaseBanner_bb_isTitleShow, true);
         boolean isIndicatorShow = ta.getBoolean(R.styleable.BaseBanner_bb_isIndicatorShow, true);
+
+        float itemGap = ta.getDimension(R.styleable.BaseBanner_bb_itemGap, 0);
+        imageGap = ta.getDimension(R.styleable.BaseBanner_bb_imageGap, 0);
+        float barGap = ta.getDimension(R.styleable.BaseBanner_bb_barGap, 0);
+        //当itemGap大于0时，设置imageGap失效
+        if (itemGap > 0) {
+            imageGap = 0;
+        }
+
         ta.recycle();
 
         //get layout_height
@@ -206,6 +219,8 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
         }
 
         LayoutParams lp = new LayoutParams(mItemWidth, mItemHeight);
+        lp.rightMargin = (int) itemGap;
+        lp.leftMargin = (int) itemGap;
         addView(mViewPager, lp);
 
         //top parent of indicators
@@ -217,8 +232,9 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
 
         //container of indicators and title
         mLlBottomBar = new LinearLayout(context);
-        LayoutParams lp2 = new LayoutParams(mItemWidth, LayoutParams.WRAP_CONTENT);
+        LayoutParams lp2 = new LayoutParams(mItemWidth - (int) barGap * 2, LayoutParams.WRAP_CONTENT);
         lp2.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, RelativeLayout.TRUE);
+        lp2.addRule(RelativeLayout.CENTER_HORIZONTAL, RelativeLayout.TRUE);
         mRlBottomBarParent.addView(mLlBottomBar, lp2);
 
         mLlBottomBar.setBackgroundColor(barColor);

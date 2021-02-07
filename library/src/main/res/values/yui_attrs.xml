@@ -64,6 +64,13 @@
             <enum name="CENTER" value="1" />
             <enum name="RIGHT" value="2" />
         </attr>
+
+        <!-- item边距-->
+        <attr name="bb_itemGap" format="dimension" />
+        <!-- 图片边距 不能与bb_itemGap共用-->
+        <attr name="bb_imageGap" format="dimension" />
+        <!-- 指示器边距-->
+        <attr name="bb_barGap" format="dimension" />
     </declare-styleable>
 
     <!-- BaseIndicatorBanner -->

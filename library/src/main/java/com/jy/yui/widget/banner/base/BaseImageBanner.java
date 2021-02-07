@@ -105,6 +105,8 @@ public abstract class BaseImageBanner<T extends BaseImageBanner<T>> extends Base
      * @param item
      */
     protected void loadingImageView(ImageView iv, BannerItem item) {
+        //设置图片间的距离
+        iv.setPadding((int) imageGap, 0, (int) imageGap, 0);
         String imgUrl = item.imgUrl;
         if (!TextUtils.isEmpty(imgUrl)) {
             if (mScale > 0) {

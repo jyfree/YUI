@@ -106,6 +106,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 app:bb_delay="7"
+                app:bb_imageGap="10dp"
                 app:bb_indicatorCornerRadius="0dp"
                 app:bb_period="7"
                 app:bb_scale="0.5625" />
@@ -126,6 +127,7 @@
                 app:bb_indicatorCornerRadius="2dp"
                 app:bb_indicatorHeight="4dp"
                 app:bb_indicatorWidth="10dp"
+                app:bb_itemGap="10dp"
                 app:bb_scale="0.5625" />
 
             <TextView
@@ -143,6 +145,7 @@
                 android:layout_height="wrap_content"
                 app:bb_barColor="#88000000"
                 app:bb_delay="3"
+                app:bb_imageGap="10dp"
                 app:bb_indicatorCornerRadius="2dp"
                 app:bb_indicatorGravity="RIGHT"
                 app:bb_indicatorHeight="4dp"
@@ -164,7 +167,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 app:bb_barColor="#88000000"
+                app:bb_barGap="10dp"
                 app:bb_delay="3"
+                app:bb_imageGap="10dp"
                 app:bb_indicatorGravity="LEFT"
                 app:bb_period="5"
                 app:bb_scale="0.5625" />
