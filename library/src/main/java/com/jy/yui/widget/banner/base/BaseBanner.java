@@ -13,6 +13,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -42,6 +43,9 @@ import java.util.List;
 public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends RelativeLayout {
 
     private static final int GRAVITY_LEFT = 0, GRAVITY_CENTER = 1, GRAVITY_RIGHT = 2;
+    //图片对齐方式
+    private static final int MATRIX = 0, FIT_XY = 1, FIT_START = 2, FIT_CENTER = 3;
+    private static final int FIT_END = 4, CENTER = 5, CENTER_CROP = 6, CENTER_INSIDE = 7;
     /**
      * ViewPager
      */
@@ -130,6 +134,11 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
     public int imageCircleRadius;
 
     /**
+     * 图片对齐方式
+     */
+    public ImageView.ScaleType imageScaleType;
+
+    /**
      * handler what
      */
     private int HANDLER_WHAT = 0x1;
@@ -187,6 +196,8 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
         boolean isIndicatorShow = ta.getBoolean(R.styleable.BaseBanner_bb_isIndicatorShow, true);
 
         imageCircleRadius = (int) ta.getDimension(R.styleable.BaseBanner_bb_imageCircleRadius, 0);
+        int scaleType = ta.getInt(R.styleable.BaseBanner_bb_imageScaleType, CENTER_CROP);
+        imageScaleType = initImageScaleType(scaleType);
 
         float itemGap = ta.getDimension(R.styleable.BaseBanner_bb_itemGap, 0);
         imageGap = ta.getDimension(R.styleable.BaseBanner_bb_imageGap, 0);
@@ -285,6 +296,32 @@ public abstract class BaseBanner<E, T extends BaseBanner<E, T>> extends Relative
                 mTvTitle.setEllipsize(TextUtils.TruncateAt.END);
                 mTvTitle.setGravity(Gravity.END);
             }
+        }
+    }
+
+    /**
+     * 初始化image的ScaleType
+     *
+     * @param scaleType
+     */
+    private ImageView.ScaleType initImageScaleType(int scaleType) {
+        switch (scaleType) {
+            case MATRIX:
+                return ImageView.ScaleType.MATRIX;
+            case FIT_XY:
+                return ImageView.ScaleType.FIT_XY;
+            case FIT_START:
+                return ImageView.ScaleType.FIT_START;
+            case FIT_CENTER:
+                return ImageView.ScaleType.FIT_CENTER;
+            case FIT_END:
+                return ImageView.ScaleType.FIT_END;
+            case CENTER:
+                return ImageView.ScaleType.CENTER;
+            case CENTER_INSIDE:
+                return ImageView.ScaleType.CENTER_INSIDE;
+            default:
+                return ImageView.ScaleType.CENTER_CROP;
         }
     }
 

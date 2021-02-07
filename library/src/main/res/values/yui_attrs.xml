@@ -27,7 +27,7 @@
 
     <!-- BaseBanner -->
     <declare-styleable name="BaseBanner">
-        <!-- Banner高宽比,范围0-1,默认0.5(for LoopViewPager)-->
+        <!-- Banner高宽比,范围0-1,默认-1(for LoopViewPager)-->
         <attr name="bb_scale" format="float" />
 
         <!--for LoopViewPager start-->
@@ -72,8 +72,20 @@
         <!-- 指示器边距-->
         <attr name="bb_barGap" format="dimension" />
 
-        <!-- 图片圆角 不能与bb_itemGap共用，否则圆角失效-->
+        <!-- 图片圆角 1、不能与bb_itemGap共用，否则圆角失效  2、当bb_scale为-1时，且设置为CENTER_CROP，则圆角失效-->
         <attr name="bb_imageCircleRadius" format="dimension" />
+
+        <!--设置图片ScaleType-->
+        <attr name="bb_imageScaleType" format="enum">
+            <enum name="MATRIX" value="0" />
+            <enum name="FIT_XY" value="1" />
+            <enum name="FIT_START" value="2" />
+            <enum name="FIT_CENTER" value="3" />
+            <enum name="FIT_END" value="4" />
+            <enum name="CENTER" value="5" />
+            <enum name="CENTER_CROP" value="6" />
+            <enum name="CENTER_INSIDE" value="7" />
+        </attr>
     </declare-styleable>
 
     <!-- BaseIndicatorBanner -->

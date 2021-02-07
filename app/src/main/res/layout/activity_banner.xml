@@ -179,6 +179,27 @@
                 android:layout_height="48dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="25dp"
+                android:text="图片裁剪圆角"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+
+            <com.jy.yui.widget.banner.SimpleImageBanner
+                android:id="@+id/ib_imageCircle_cCrop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:bb_barColor="#88000000"
+                app:bb_delay="3"
+                app:bb_imageCircleRadius="20dp"
+                app:bb_imageGap="10dp"
+                app:bb_indicatorGravity="LEFT"
+                app:bb_period="5"
+                app:bb_scale="0.5625" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
                 android:text="图片圆角"
                 android:textColor="#383838"
                 android:textSize="16sp" />
@@ -191,6 +212,7 @@
                 app:bb_delay="3"
                 app:bb_imageCircleRadius="20dp"
                 app:bb_imageGap="10dp"
+                app:bb_imageScaleType="CENTER_INSIDE"
                 app:bb_indicatorGravity="LEFT"
                 app:bb_period="5"
                 app:bb_scale="0.5625" />

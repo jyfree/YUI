@@ -84,6 +84,11 @@ class BannerSimpleActivity : AppCompatActivity(), BaseBanner.OnItemClickListener
             .setOnItemClickListener(this)
             .startScroll()
 
+        //图片裁剪圆角
+        ib_imageCircle_cCrop.setSource(mData)
+            .setOnItemClickListener(this)
+            .startScroll()
+
         //图片圆角
         ib_imageCircle.setSource(mData)
             .setOnItemClickListener(this)
