@@ -113,11 +113,11 @@ public abstract class BaseImageBanner<T extends BaseImageBanner<T>> extends Base
             if (mScale > 0) {
                 int itemWidth = getItemWidth();
                 int itemHeight = (int) (itemWidth * mScale);
-                iv.setLayoutParams(new LinearLayout.LayoutParams(itemWidth, itemHeight));
+                iv.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, itemHeight));
             } else {
                 int itemWidth = getItemWidth();
                 int itemHeight = getItemHeight();
-                iv.setLayoutParams(new LinearLayout.LayoutParams(itemWidth, itemHeight));
+                iv.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, itemHeight));
             }
             ImageLoaderExt.INSTANCE.loadImage(iv, imgUrl, mPlaceHolder, imageCircleRadius);
         } else {
