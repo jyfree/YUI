@@ -12,14 +12,6 @@ import com.jy.yui.selector.selector.CompoundDrawableSelector
  * @date: 2021/2/3 13:42
  * @author: jy
  */
-fun View.setShadow(@ColorRes bgColor: Int, @ColorRes shadowColor: Int) {
-    YSelector.shadowHelper()
-        .setBgColor(bgColor)
-        .setShapeRadius(5f)
-        .setShadowRadius(5f)
-        .setShadowColor(shadowColor)
-        .into(this)
-}
 
 fun View.setBgColor(@ColorRes bgColor: Int, @ColorRes pressedColor: Int) {
     YSelector.shapeSelector()

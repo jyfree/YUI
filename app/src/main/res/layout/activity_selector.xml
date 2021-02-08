@@ -7,15 +7,6 @@
 
 
     <TextView
-        android:id="@+id/tv_Shadow"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Shadow" />
-
-
-    <TextView
         android:id="@+id/tv_BgColor"
         android:layout_width="100dp"
         android:layout_height="30dp"

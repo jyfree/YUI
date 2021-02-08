@@ -6,7 +6,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.jy.yui.selector.selector.CompoundDrawableSelector
 import com.jy.yui.simple.R
-import com.jy.yui.simple.utils.*
+import com.jy.yui.simple.utils.setBgColor
+import com.jy.yui.simple.utils.setBgDrawable
+import com.jy.yui.simple.utils.setCompoundDrawable
+import com.jy.yui.simple.utils.setTextColor
 import kotlinx.android.synthetic.main.activity_selector.*
 
 
@@ -34,10 +37,6 @@ class SelectorSimpleActivity : AppCompatActivity() {
 
 
     private fun initUI(savedInstanceState: Bundle?) {
-        tv_Shadow.setShadow(
-            R.color.colorAccent,
-            R.color.colorPrimary
-        )
         tv_BgColor.setBgColor(
             R.color.colorAccent,
             R.color.colorPrimary

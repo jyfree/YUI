@@ -15,11 +15,6 @@ object YSelector {
     fun shapeSelector(): ShapeSelector = ShapeSelector.getInstance()
 
     /**
-     * 阴影工具类
-     */
-    fun shadowHelper(): ShadowHelper = ShadowHelper.getInstance()
-
-    /**
      * Color字体颜色选择器
      */
     fun colorSelector(): ColorSelector = ColorSelector.getInstance()
