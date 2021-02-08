@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
             R.id.btnTouchIVSimple -> TouchImageViewSimpleActivity.startAct(this)
             R.id.btnBannerSimple -> BannerSimpleActivity.startAct(this)
             R.id.btnAlphaViewSimple -> AlphaViewSimpleActivity.startAct(this)
+            R.id.btnCountDownViewSimple -> CountDownSimpleActivity.startAct(this)
+            R.id.btnShadowSimple -> ShadowSimpleActivity.startAct(this)
         }
     }
 }

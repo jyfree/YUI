@@ -635,6 +635,14 @@ class ShapeSelector private constructor() : ISelectorUtil<Drawable, View> {
         return this
     }
 
+    /**
+     * 设置背景选择器同时设置字体颜色颜色器
+     */
+    fun selectorColor(colorStateList: ColorStateList): ShapeSelector {
+        mColorStateList = colorStateList
+        this.isSelectorColor = true
+        return this
+    }
 
     override fun into(view: View): YSelector {
         if (isBackgroundColor && view !is Button) { //针对selector作用在非button无效问题

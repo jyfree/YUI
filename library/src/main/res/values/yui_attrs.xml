@@ -117,4 +117,45 @@
         <attr name="bb_indicatorUnSelectRes" format="reference" />
     </declare-styleable>
 
+    <!-- 阴影 -->
+    <declare-styleable name="ShadowDrawable">
+        <!-- 阴影圆角弧度-->
+        <attr name="sd_shadowRadius" format="dimension" />
+        <!-- 阴影颜色 -->
+        <attr name="sd_shadowColor" format="color" />
+        <!--形状， 默认rectangle-->
+        <attr name="sd_shapeType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <!-- 圆角弧度 -->
+        <attr name="sd_shapeRadius" format="dimension" />
+        <!-- X轴阴影偏移 -->
+        <attr name="sd_offsetX" format="dimension" />
+        <!-- Y轴阴影偏移 -->
+        <attr name="sd_offsetY" format="dimension" />
+        <!-- 背景颜色 -->
+        <attr name="sd_bgColor" format="color" />
+        <!-- 第二背景颜色，渐变色使用 -->
+        <attr name="sd_secondBgColor" format="color" />
+    </declare-styleable>
+
+    <!-- 倒计时-->
+    <declare-styleable name="CountDownTextView">
+        <!--倒计时过程中按钮文本的格式，默认"%ds"，直接显示剩余秒数-->
+        <attr name="cdt_countDownFormat" format="string" />
+        <!--倒计时总时长(单位为毫秒)，默认 60000 毫秒-->
+        <attr name="cdt_countDown" format="integer" />
+        <!--倒计时间隔(单位为毫秒)，默认 1000 毫秒-->
+        <attr name="cdt_countDownInterval" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CountDownButton">
+        <!--倒计时过程中按钮文本的格式，默认"%ds"，直接显示剩余秒数-->
+        <attr name="cdb_countDownFormat" format="string" />
+        <!--倒计时总时长(单位为毫秒)，默认 60000 毫秒-->
+        <attr name="cdb_countDown" format="integer" />
+        <!--倒计时间隔(单位为毫秒)，默认 1000 毫秒-->
+        <attr name="cdb_countDownInterval" format="integer" />
+    </declare-styleable>
 </resources>

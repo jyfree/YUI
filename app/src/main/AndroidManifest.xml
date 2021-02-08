@@ -28,6 +28,8 @@
         <activity android:name=".activity.TouchImageViewSimpleActivity" />
         <activity android:name=".activity.BannerSimpleActivity" />
         <activity android:name=".activity.AlphaViewSimpleActivity" />
+        <activity android:name=".activity.CountDownSimpleActivity" />
+        <activity android:name=".activity.ShadowSimpleActivity" />
 
     </application>
 

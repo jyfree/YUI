@@ -55,6 +55,22 @@
                 android:text="AlphaView示例"
                 android:textAllCaps="false" />
 
+            <Button
+                android:id="@+id/btnCountDownViewSimple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnClick"
+                android:text="CountDown示例"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnShadowSimple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnClick"
+                android:text="Shadow示例"
+                android:textAllCaps="false" />
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>
