@@ -158,4 +158,27 @@
         <!--倒计时间隔(单位为毫秒)，默认 1000 毫秒-->
         <attr name="cdb_countDownInterval" format="integer" />
     </declare-styleable>
+
+
+    <!-- 验证码输入框-->
+    <declare-styleable name="VerifyCodeEditText">
+        <!--输入框的数量，默认是4-->
+        <attr name="vci_number" format="integer" />
+        <!--每一个输入框的宽度，默认21dp-->
+        <attr name="vci_width" format="dimension|reference" />
+        <!--输入框之间的分割线-->
+        <attr name="vci_divider" format="reference" />
+        <!--输入框文字颜色，默认黑色-->
+        <attr name="vci_text_color" format="color|reference" />
+        <!--输入框文字大小，默认16sp-->
+        <attr name="vci_text_size" format="dimension|reference" />
+        <!--输入框获取焦点时背景-->
+        <attr name="vci_bg_focus" format="reference" />
+        <!--输入框没有焦点时背景-->
+        <attr name="vci_bg_normal" format="reference" />
+        <!--是否是密码模式, 默认是false-->
+        <attr name="vci_is_pwd" format="boolean" />
+        <!--密码模式时,圆的半径，默认是5dp-->
+        <attr name="vci_pwd_radius" format="dimension|reference" />
+    </declare-styleable>
 </resources>

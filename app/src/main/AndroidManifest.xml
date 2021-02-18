@@ -31,6 +31,7 @@
         <activity android:name=".activity.CountDownSimpleActivity" />
         <activity android:name=".activity.ShadowSimpleActivity" />
         <activity android:name=".activity.GoodViewSimpleActivity" />
+        <activity android:name=".activity.VerifyCodeEditTextSimpleActivity" />
 
     </application>
 
