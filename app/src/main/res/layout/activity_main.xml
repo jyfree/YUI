@@ -71,6 +71,14 @@
                 android:text="Shadow示例"
                 android:textAllCaps="false" />
 
+            <Button
+                android:id="@+id/btnGoodViewSimple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnClick"
+                android:text="GoodView示例"
+                android:textAllCaps="false" />
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

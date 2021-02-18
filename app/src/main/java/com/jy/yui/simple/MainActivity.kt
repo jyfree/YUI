@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
             R.id.btnAlphaViewSimple -> AlphaViewSimpleActivity.startAct(this)
             R.id.btnCountDownViewSimple -> CountDownSimpleActivity.startAct(this)
             R.id.btnShadowSimple -> ShadowSimpleActivity.startAct(this)
+            R.id.btnGoodViewSimple -> GoodViewSimpleActivity.startAct(this)
         }
     }
 }
